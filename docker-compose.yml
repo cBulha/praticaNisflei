@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jenkins:
+    container_name: pratica_caio
+    image: jk_im_servidor_f:0.1
+    build:
+      context: .
+      dockerfile: dockerfilejenkins
+    ports:
+      - "8090:8080"
+
